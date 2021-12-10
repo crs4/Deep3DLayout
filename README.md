@@ -25,7 +25,7 @@ This repo is a **python** implementation where you can test **layout mesh infere
 - PIL
 - matplotlib.pyplot
 - PyTorch3D
-- open3d (for mesh visualizaiton)
+- open3d (for mesh visualization)
 
 The implementation of Deep3DLayout is based on [PyTorch3D](https://github.com/facebookresearch/pytorch3d).
 You will first need to install that in order to be able to run Deep3DLayout.
