@@ -14,8 +14,8 @@ This repo is a **python** implementation where you can test **layout mesh infere
 ![](assets/pipeline_details.png)
 
 ## Updates
-* 2021-12-10 first code release
-* 2020-08-27: TO APPEAR
+* 2021-12-10 Code release
+
 
 ## Installation Requirements
 - Python >=3.6
@@ -32,7 +32,8 @@ You will first need to install that in order to be able to run Deep3DLayout.
 
 ## Pretrained weights.
 Copy to your local ./ckpt directory:
-- [m3d_layout.pth](https://vicserver.crs4.it/deep3dlayout/m3d_layout.pth). Trained using the MatterportLayout original splitting (https://github.com/ericsujw/Matterport3DLayoutAnnotation).
+- [m3d_layout.pth](https://vicserver.crs4.it/tmp/deep3dlayout/m3d_layout.pth). Trained using the [MatterportLayout](https://github.com/ericsujw/Matterport3DLayoutAnnotation) original splitting.
+- other datasets to appear
 
 ## Inference on equirectagular images	
 Here an example of inferring using the pre-trained model on Matterport3D:
@@ -44,6 +45,28 @@ python inference.py --pth ckpt/m3d_layout.pth --img input/UwV83HsGsw3_71ada03098
     - `--img` path to the input equirectangular image.
 	- `--visualize` enable/disable output mesh visualization
 	- `--save_obj` save or not the output mesh as obj.
-	- `--output_dir` path to save obj results.
+	- `--output_dir` path to save obj results. 
 
-
+## Acknowledgement
+- We acknowledge the contribution of the European Union’s H2020 research and innovation programme under grant agreements 813170 (EVOCATION). 
+The provided demo is released to complement the publication under the conditions of the mentioned projects, while the full source code remains the property of CRS4, 
+except for the portions of code indicated in the headers of this release and derived from work released under [BSD-3-Clause License](LICENSE).
+- Part of this release leverages implementations proposed by [Mesh R-CNN](https://github.com/facebookresearch/meshrcnn). We thank the authors for their great work and repo.
+	
+## Citation
+Please cite our paper for any purpose of usage.
+```
+@Article{Pintore:2021:D3R,
+    author = {Giovanni Pintore and Eva Almansa and Marco Agus and Enrico Gobbetti},
+    title = {{Deep3DLayout}: {3D} Reconstruction of an Indoor Layout from a Spherical Panoramic Image},
+    journal = {ACM Transactions on Graphics},
+    volume = {40},
+    number = {6},
+    pages = {250:1--250:12},
+    month = {December},
+    year = {2021},
+    doi = {10.1145/3478513.3480480},
+    note = {Proc. SIGGRAPH Asia 2021. To appear},
+    url = {http://vic.crs4.it/vic/cgi-bin/bib-page.cgi?id='Pintore:2021:D3R'},
+}
+```
