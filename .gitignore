@@ -1,0 +1,5 @@
+ckpt/*
+__pycache__/*
+custom_losses/*
+.vs/*
+results/*

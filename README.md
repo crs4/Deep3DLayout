@@ -14,5 +14,36 @@ This repo is a **python** implementation where you can test **layout mesh infere
 ![](assets/pipeline_details.png)
 
 ## Updates
+* 2021-12-10 first code release
 * 2020-08-27: TO APPEAR
+
+## Installation Requirements
+- Python >=3.6
+- pytorch>=1.0.1
+- torchvision
+- numpy
+- PIL
+- matplotlib.pyplot
+- PyTorch3D
+- open3d (for mesh visualizaiton)
+
+The implementation of Deep3DLayout is based on [PyTorch3D](https://github.com/facebookresearch/pytorch3d).
+You will first need to install that in order to be able to run Deep3DLayout.
+
+## Pretrained weights.
+Copy to your local ./ckpt directory:
+- [m3d_layout.pth](https://vicserver.crs4.it/deep3dlayout/m3d_layout.pth). Trained using the MatterportLayout original splitting (https://github.com/ericsujw/Matterport3DLayoutAnnotation).
+
+## Inference on equirectagular images	
+Here an example of inferring using the pre-trained model on Matterport3D:
+```
+python inference.py --pth ckpt/m3d_layout.pth --img input/UwV83HsGsw3_71ada030981d4468b76dcebc1b6fb940.png
+
+```    
+    - `--pth` path to the trained model.
+    - `--img` path to the input equirectangular image.
+	- `--visualize` enable/disable output mesh visualization
+	- `--save_obj` save or not the output mesh as obj.
+	- `--output_dir` path to save obj results.
+
 
