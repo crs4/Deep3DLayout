@@ -37,11 +37,15 @@ Copy to your local ./ckpt directory:
 - other models to appear
 
 ## Inference on equirectagular images	
-Here an example of inferring using the pre-trained model on Matterport3D:
+Here some examples of inferring using the pre-trained models:
+MatterportLayout:
 ```
 python inference.py --pth ckpt/m3d_layout.pth --img input/UwV83HsGsw3_71ada030981d4468b76dcebc1b6fb940.png
-
-```    
+```  
+Pano3DLayout:
+```
+python inference.py --pth ckpt/pano3d_layout.pth --img input/apartment1.jpg
+```  
     - `--pth` path to the trained model.
     - `--img` path to the input equirectangular image.
 	- `--visualize` enable/disable output mesh visualization
