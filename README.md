@@ -33,7 +33,8 @@ You will first need to install that in order to be able to run Deep3DLayout.
 ## Pretrained weights.
 Copy to your local ./ckpt directory:
 - [m3d_layout.pth](https://vicserver.crs4.it/tmp/deep3dlayout/m3d_layout.pth). Trained using the [MatterportLayout](https://github.com/ericsujw/Matterport3DLayoutAnnotation) original splitting.
-- other datasets to appear
+- [pano3d_layout.pth](https://vicserver.crs4.it/tmp/deep3dlayout/pano3d_layout.pth). Finetuned using the [Pano3DLayout] dataset(https://github.com/EvaAlmansa/Pano3DLayout).
+- other models to appear
 
 ## Inference on equirectagular images	
 Here an example of inferring using the pre-trained model on Matterport3D:

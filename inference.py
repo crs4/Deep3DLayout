@@ -11,7 +11,6 @@ from pytorch3d.io import save_obj
 
 from deep3dlayout_model import Deep3DlayoutNet
 
-########CAMERA READY pre-trained
 def_pth ='ckpt/m3d_layout.pth'
 
 def_output_dir = 'results/'
