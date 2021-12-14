@@ -38,6 +38,7 @@ Copy to your local ./ckpt directory:
 
 ## Inference on equirectagular images	
 Here some examples of inferring using the pre-trained models:
+
 MatterportLayout:
 ```
 python inference.py --pth ckpt/m3d_layout.pth --img input/UwV83HsGsw3_71ada030981d4468b76dcebc1b6fb940.png
@@ -45,6 +46,10 @@ python inference.py --pth ckpt/m3d_layout.pth --img input/UwV83HsGsw3_71ada03098
 Pano3DLayout:
 ```
 python inference.py --pth ckpt/pano3d_layout.pth --img input/apartment1.jpg
+```  
+AtlantaLayout:
+```
+python inference.py --pth ckpt/atlanta_layout.pth --img input/2azQ1b91cZZ_0a9f30bd318e40de89f71e4bf6987358_equi.png
 ```  
     - `--pth` path to the trained model.
     - `--img` path to the input equirectangular image.
