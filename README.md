@@ -14,6 +14,7 @@ This repo is a **python** implementation where you can test **layout mesh infere
 ![](assets/pipeline_details.png)
 
 ## Updates
+* 2025-02-05 Pre-trained weights link restored
 * 2021-12-10 Code release
 
 
@@ -31,7 +32,7 @@ The implementation of Deep3DLayout is based on [PyTorch3D](https://github.com/fa
 You will first need to install that in order to be able to run Deep3DLayout.
 
 ## Pretrained weights.
-Download and copy to your local ./ckpt directory from [Deep3Dlayout weights] (https://vicserver.crs4.it/deep3dlayout/).
+Download and copy to your local ./ckpt directory from https://vicserver.crs4.it/deep3dlayout/.
 
 ## Inference on equirectagular images	
 Here some examples of inferring using the pre-trained models:
