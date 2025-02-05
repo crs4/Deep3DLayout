@@ -31,11 +31,7 @@ The implementation of Deep3DLayout is based on [PyTorch3D](https://github.com/fa
 You will first need to install that in order to be able to run Deep3DLayout.
 
 ## Pretrained weights.
-Copy to your local ./ckpt directory:
-- [m3d_layout.pth](https://vicserver.crs4.it/tmp/deep3dlayout/m3d_layout.pth). Trained using the [MatterportLayout](https://github.com/ericsujw/Matterport3DLayoutAnnotation) original splitting.
-- [pano3d_layout.pth](https://vicserver.crs4.it/tmp/deep3dlayout/pano3d_layout.pth). Finetuned using the [Pano3DLayout] dataset(https://github.com/EvaAlmansa/Pano3DLayout).
-- [atlanta_layout.pth](https://vicserver.crs4.it/tmp/deep3dlayout/atlanta_layout.pth). Finetuned using the [AtlantaLayout] dataset(https://github.com/crs4/AtlantaNet).
-- other models to appear
+Download and copy to your local ./ckpt directory from [Deep3Dlayout weights] (https://vicserver.crs4.it/deep3dlayout/).
 
 ## Inference on equirectagular images	
 Here some examples of inferring using the pre-trained models:
@@ -59,7 +55,7 @@ python inference.py --pth ckpt/atlanta_layout.pth --img input/2azQ1b91cZZ_0a9f30
 	- `--output_dir` path to save obj results. 
 
 ## Acknowledgement
-- We acknowledge the contribution of the European Union’s H2020 research and innovation programme under grant agreements 813170 (EVOCATION). 
+- We acknowledge the contribution of the European Unionâ€™s H2020 research and innovation programme under grant agreements 813170 (EVOCATION). 
 The provided demo is released to complement the publication under the conditions of the mentioned projects, while the full source code remains the property of CRS4, 
 except for the portions of code indicated in the headers of this release and derived from work released under [BSD-3-Clause License](LICENSE).
 - Part of this release leverages implementations proposed by [Mesh R-CNN](https://github.com/facebookresearch/meshrcnn). We thank the authors for their great work and repo.
